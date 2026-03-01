@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .dark {
+    color-scheme: dark;
+  }
+}
+
+[data-theme="elderly"] {
+  font-size: 1.25rem;
+  line-height: 1.8;
+}
+
+[data-theme="elderly"] button {
+  min-height: 3.5rem;
+  font-size: 1.5rem;
+}
+
+[data-theme="elderly"] input,
+[data-theme="elderly"] select {
+  min-height: 3.5rem;
+  font-size: 1.25rem;
+}
+
+[data-theme="youth"] {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+[data-theme="youth"] .card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+}
